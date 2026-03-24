@@ -1,23 +1,23 @@
 /* Basic design tokens */
 :root {
-    --bg: #0e0e0f;
-    --panel: #1a1a1c;
-    --panel-2: #141416;
-    --text: #f5f5f5;
-    --muted: #b3b3b3;
-    --border: rgba(255, 255, 255, 0.08);
-    --accent: #ff7a00; /* Safety orange */
-    --accent-dark: #cc6200;
-    --max: 1100px;
-    --radius: 14px;
-  }
+  --bg: #f9fafb;          /* light background */
+  --panel: #ffffff;       /* white cards */
+  --panel-2: #f3f4f6;     /* light gray sections */
+  --text: #111111;        /* dark readable text */
+  --muted: #555555;
+  --border: #dddddd;
+  --accent: #ff7a00;
+  --accent-dark: #cc6200;
+  --max: 1100px;
+  --radius: 14px;
+}
   
   /* Reset-ish defaults */
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    background: linear-gradient(180deg, var(--bg), #070a0f);
+    background: linear-gradient(180deg, #f9fafb, #eef1f5);
     color: var(--text);
     line-height: 1.5;
   }
@@ -45,7 +45,7 @@
   .site-header {
     position: sticky;
     top: 0;
-    background: rgba(11, 15, 20, 0.82);
+    background: #f5f5f5; 
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     z-index: 10;
@@ -87,7 +87,7 @@
     border-radius: 10px;
   }
   .site-nav a:hover {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(0, 0, 0, 0.05);
   }
   .nav-toggle {
     display: none;
@@ -127,8 +127,8 @@
   .hero-inner {
     display: grid;
     grid-template-columns: 1.3fr 0.7fr;
-    gap: 18px;
-    align-items: start;
+    gap: 24px;
+    align-items: stretch;
   }
   .hero h1 {
     font-size: clamp(2rem, 3vw, 3rem);
@@ -162,7 +162,7 @@
   
   /* Sections */
   .section { padding: 42px 0; }
-  .section.alt { background: rgba(255, 255, 255, 0.03); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .section.alt { background: var(--panel-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .section h2 { margin: 0 0 10px; font-size: 1.8rem; }
   .section-lead { color: var(--muted); margin: 0 0 18px; }
   
@@ -173,12 +173,12 @@
   }
   .card {
     border: 1px solid var(--border);
-    background: rgba(17, 24, 38, 0.55);
+    background: var(--panel);
     border-radius: var(--radius);
     padding: 16px;
     box-sizing: border-box;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    min-height: 200px;
   }
   .card h3 { margin: 0 0 6px; }
   .muted { color: var(--muted); }
@@ -220,9 +220,9 @@
     width: 100%;
     padding: 10px 12px;
     border-radius: 12px;
+    background: #ffffff;
+    color: #111;
     border: 1px solid var(--border);
-    background: rgba(0, 0, 0, 0.25);
-    color: var(--text);
   }
   input:focus, textarea:focus { outline: 2px solid rgba(34, 197, 94, 0.35); }
   
@@ -276,4 +276,10 @@
 
 #services-header-text {
     text-align: center;
+}
+
+.card,
+.hero-card,
+.stat {
+    background: var(--panel);
 }
