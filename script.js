@@ -12,10 +12,10 @@ toggleBtn.addEventListener("click", () => {
 document.querySelector("#year").textContent = String(new Date().getFullYear());
 
 // Front-end only form handler (no backend yet)
-const form = document.querySelector("#quoteForm");
-const formMsg = document.querySelector("#formMsg");
+//const form = document.querySelector("#quoteForm");
+//const formMsg = document.querySelector("#formMsg");
 
-
+/*
 form.addEventListener("submit", (e) => {
   e.preventDefault(); // prevents page refresh
 
@@ -23,4 +23,4 @@ form.addEventListener("submit", (e) => {
   formMsg.textContent = "Thanks! Your request was captured (demo). Hook this to email next.";
   form.reset();
 });
-
+*/

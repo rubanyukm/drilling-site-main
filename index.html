@@ -191,51 +191,45 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="section">
-        <div class="container two-col">
-          <div>
+      <section id="contact" class="section contact-section">
+        <div class="container contact-layout">
+          <div class="contact-copy">
+            <p class="eyebrow">Get in touch</p>
             <h2>Request a Quote</h2>
             <p class="section-lead">
-              Tell us what you're building and we'll follow up with next steps.
+              For now, the fastest way to reach us is by phone or email. Tell us about your project,
+              location, and timeline, and we'll get back to you with next steps.
             </p>
-
-            <form class="form" id="quoteForm">
-              <label>
-                Name
-                <input name="name" type="text" required />
-              </label>
-
-              <label>
-                Email
-                <input name="email" type="email" required />
-              </label>
-
-              <label>
-                Phone
-                <input name="phone" type="tel" />
-              </label>
-
-              <label>
-                Job Location
-                <input name="location" type="text" placeholder="City, State" />
-              </label>
-
-              <label>
-                Details
-                <textarea
-                  name="details"
-                  rows="5"
-                  placeholder="Project details"
-                  required
-                ></textarea>
-              </label>
-
-              <button class="btn" type="submit">Send</button>
-              <p class="tiny muted" id="formMsg" aria-live="polite"></p>
-            </form>
+      
+            <div class="contact-actions">
+              <a class="btn" href="tel:+13133031609">Call Now</a>
+              <a class="btn secondary" href="mailto:office@geosfera-hdd.com">Email Us</a>
+            </div>
           </div>
-
-          
+      
+          <aside class="contact-panel" aria-label="Company contact information">
+            <h3>Contact Information</h3>
+      
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+13133031609">(313) 303-1609</a>
+            </div>
+      
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:office@geosfera-hdd.com">office@geosfera-hdd.com</a>
+            </div>
+      
+            <div class="contact-item">
+              <span class="contact-label">Service Area</span>
+              <p>Midwest</p>
+            </div>
+      
+            <div class="contact-item">
+              <span class="contact-label">Typical Project Types</span>
+              <p>HDD, conduit installation, utility work, potholing, and restoration</p>
+            </div>
+          </aside>
         </div>
       </section>
     </main>
