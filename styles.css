@@ -50,29 +50,6 @@
     border-bottom: 1px solid var(--border);
     z-index: 10;
   }
-  .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 0;
-    gap: 14px;
-  }
-  
-  .brand {
-    display: flex;
-    gap: 12px;
-    text-decoration: none;
-    color: var(--text);
-    align-items: center;
-  }
-  .brand-mark {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #ff7a00, #ffb347);
-  }
-  .brand-name { font-weight: 700; }
-  .brand-tag { font-size: 0.9rem; color: var(--muted); }
   
   /* Nav */
   .site-nav {
@@ -282,4 +259,37 @@
 .hero-card,
 .stat {
     background: var(--panel);
+}
+
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 12px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  height: 128px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 0 1 auto;
+  min-width: 0;
 }
