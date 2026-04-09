@@ -2,9 +2,17 @@
 const toggleBtn = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".site-nav");
 
+if (!toggleBtn || !nav) {
+  console.log("Toggle button or nav not found");
+}
+
+console.log("script loaded");
+
 // Toggle mobile nav open/closed
 toggleBtn.addEventListener("click", () => {
-  const isOpen = nav.classList.toggle("open");
+  console.log("Button Clicked");
+  nav.classList.toggle('open');
+  const isOpen = nav.classList.contains('open');
   toggleBtn.setAttribute("aria-expanded", String(isOpen));
 });
 
